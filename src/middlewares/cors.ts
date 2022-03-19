@@ -7,7 +7,7 @@ class CORS {
     const options: CorsOptions = {
       origin: allowedOrigins,
     };
-    app.use(configureCors(options));
+    app.use(configureCors());
     return app;
   }
 }
